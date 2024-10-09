@@ -1,0 +1,31 @@
+@import './styles/variables';
+
+:host {
+	display: block;
+	position: static;
+	background-color: $background-primary-color;
+	background-image: url("/assets/images/background.svg");
+	background-size: 100% auto;
+
+	@media #{$laptop} {
+		background-image: unset;
+		background-size: unset;
+	}
+}
+
+.container {
+	background-color: $background-secondary-color;
+	margin: 0 $margin-desktop;
+
+	@media #{$laptop} {
+		display: flex;
+		flex-direction: column;
+
+		margin: 0 $margin-laptop;
+		background-color: unset;
+	}
+}
+
+.content {
+	padding-top: 120px;
+}

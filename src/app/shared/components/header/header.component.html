@@ -1,0 +1,38 @@
+<nav class="header-container">
+	<div class="header-logo">
+		<div class="logo">
+			<a>{{ 'HELLO' | translate }}</a>
+		</div>
+	</div>
+	<ul class="header-links">
+		@for (link of links; track $index) {
+			<li class="link">
+				<a	[href]="'main#' + link.key" 
+					[innerHTML]="link.value | highlightFirstLetter"
+					[class.active]="activeLink === link.key"
+					[class.disabled]="activeLink !== link.key">
+				</a>
+			</li>
+		}
+		<li class="link language">
+			<a (click)="switchLanguage('en')">EN</a>
+			<a (click)="switchLanguage('ru')">RU</a>
+		</li>
+	</ul>
+</nav>
+
+<div class="social-links">
+	<div class="line vertical">
+		
+	</div>
+	<div class="social-link">
+		<a [href]="( 'FOOTER.MEDIA.LINKS.GITHUB' | translate)">
+			<img class="icon" src="assets/icons/socials/github.svg" alt="github">
+		</a>
+	</div>
+	<div class="social-link">
+		<a [href]="( 'FOOTER.MEDIA.LINKS.TELEGRAM' | translate)">
+			<img class="icon" src="assets/icons/socials/telegram.svg" alt="telegram">
+		</a>
+	</div>
+</div>

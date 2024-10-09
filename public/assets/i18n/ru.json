@@ -1,0 +1,36 @@
+{
+	"COMMON": {
+		"NAME": "Никита Мальцев",
+		"MAIL": "nikitasvi1000@gmail.com"
+	},
+	"HEADER": {
+		"LINKS": {
+			"HOME": "главная",
+			"WORKS": "проекты",
+			"ABOUT_ME": "обо-мне",
+			"CONTACTS": "контакты"
+		},
+		"LANGUAGE": {
+			"RU": "РУС",
+			"EN": "АНГЛ"
+		}
+	},
+	"FOOTER": {
+		"INFO": {
+			"DESCRIPTION": "Front-end разработчик && Full-stack разработчик"
+		},
+		"MEDIA": {
+			"TITLE": "Соц. сети",
+			"LINKS": {
+				"GITHUB": "https://github.com/nikitasvi",
+				"TELEGRAM": "https://t.me/Nikitkko"
+			}
+		}
+	},
+	"PROJECTS": {
+		"TITLE": "/projects",
+		"DESCRIPTION": "Список моих проектов",
+		"COMPLETE_APPS": "#полноценные-проекты",
+		"SMALL_PROJECTS": "#небольшие-проекты"
+	}
+}

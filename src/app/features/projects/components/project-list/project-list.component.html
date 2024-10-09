@@ -1,0 +1,25 @@
+<ng-container>
+	<div class="page-info">
+		<div class="title" [innerHTML]="('PROJECTS.TITLE' | translate) | highlightFirstLetter"></div>
+
+		<div class="description">{{ "PROJECTS.DESCRIPTION" | translate }}</div>
+	</div>
+	
+	<ng-container>
+		<div class="title" [innerHTML]="('PROJECTS.COMPLETE_APPS' | translate) | highlightFirstLetter"></div>
+		<div class="projects">
+			@for (project of productProjects; track project) {
+				<app-project-card [project]="project"></app-project-card>
+			}
+		</div>
+	</ng-container>
+
+	<ng-container>
+		<div class="title" [innerHTML]="('PROJECTS.SMALL_PROJECTS' | translate) | highlightFirstLetter"></div>
+		<div class="projects">
+			@for (project of smallProjects; track project) {
+				<app-project-card [project]="project"></app-project-card>
+			}
+		</div>
+	</ng-container>
+</ng-container>

@@ -1,0 +1,36 @@
+{
+	"COMMON": {
+		"NAME": "Nikita Maltsev",
+		"MAIL": "nikitasvi1000@gmail.com"
+	},
+	"HEADER": {
+		"LINKS": {
+			"HOME": "home",
+			"WORKS": "works",
+			"ABOUT_ME": "about-me",
+			"CONTACTS": "contacts"
+		},
+		"LANGUAGE": {
+			"RU": "RU",
+			"EN": "EN"
+		}
+	},
+	"FOOTER": {
+		"INFO": {
+			"DESCRIPTION": "Front-end developer && Full-stack developer"
+		},
+		"MEDIA": {
+			"TITLE": "Socials",
+			"LINKS": {
+				"GITHUB": "https://github.com/nikitasvi",
+				"TELEGRAM": "https://t.me/Nikitkko"
+			}
+		}
+	},
+	"PROJECTS": {
+		"TITLE": "/projects",
+		"DESCRIPTION": "List of my projects",
+		"COMPLETE_APPS": "#complete-apps",
+		"SMALL_PROJECTS": "#small-projects"
+	}
+}

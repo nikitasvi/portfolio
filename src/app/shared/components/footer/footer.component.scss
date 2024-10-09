@@ -1,0 +1,43 @@
+@import "../../../styles/variables";
+
+:host {
+	display: block;
+	border-top: 1px solid $grey;
+}
+
+.container {
+	margin: 0 $margin-desktop;
+	background-color: $background-secondary-color;
+
+	@media #{$laptop} {
+		background-color: $background-primary-color;
+		margin: $margin-laptop;
+	}
+}
+
+.content {
+	padding: 32px 0;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 10px;
+
+	.row {
+		display: flex;
+		column-gap: 24px;
+		margin-bottom: 16px;
+
+		.mail {
+			color: $grey;
+		}
+	}
+}
+
+.media {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+}
+
+.content-footer {
+	
+}

@@ -1,0 +1,25 @@
+<div class="project-card">
+	<ng-container *ngIf="project.imagePreviewUrl">
+		<img class="project-image" [src]="project.imagePreviewUrl" alt="Project Preview">
+	</ng-container>
+	
+	<div class="project-stack">
+		@for (tech of project.technologies; track tech) {
+			{{ tech }}
+		}
+	</div>
+	
+	<div class="project-body">
+		<h2 class="title">{{ project.name }}</h2>
+		<span class="description">{{ project.description }}</span>
+		<div class="actions">
+			<button *ngIf="project.githubUrl" (click)="openLink(project.githubUrl)" class="btn">GitHub</button>
+			<button *ngIf="project.liveUrl" (click)="openLink(project.liveUrl)" class="btn btn-primary">Live</button>
+		  </div>
+		</div>
+	</div>
+
+	<div class="project-footer">
+
+  </div>
+  

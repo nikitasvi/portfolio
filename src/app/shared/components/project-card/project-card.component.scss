@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+
+.project-card {
+	border: 1px solid $grey;
+	max-width: 325px;
+}
+
+.project-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 200px;
+}
+
+.project-stack {
+	color: $grey;
+	padding: 8px;
+	border-top: 1px solid $grey;
+	border-bottom: 1px solid $grey;
+}
+
+.project-body {
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+	padding: 16px;
+
+	.title {
+		font-size: 24px;
+		font-weight: 500;
+	}
+
+	.description {
+		color: $grey;
+	}
+}

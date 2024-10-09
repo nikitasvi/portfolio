@@ -1,0 +1,67 @@
+@import '../../../styles/variables';
+
+:host {
+	width: 100%;
+	display: block;
+}
+
+.header-container {
+	width: calc(100% - 2 * $margin-desktop);
+	padding: 32px 0px 8px 0px;
+	margin: 0 $margin-desktop;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	background-color: $background-secondary-color;
+
+	@media #{$laptop} {
+		width: 100%;
+		margin: 0 $margin-laptop;
+		background-color: $background-primary-color;
+	}
+}
+
+.header-links {
+	display: flex;
+	column-gap: 32px;
+}
+
+.link {
+	font-size: 16px;
+
+	a {
+		cursor: pointer;
+
+		&.disabled {
+			color: $grey;
+		}
+
+		&.active {
+			font-weight: 500;
+		}
+	}
+}
+
+.social-links {
+	position: fixed;
+	top: 0;
+	left: 17px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@media #{$laptop} {
+		display: none;
+	}
+}
+
+.line {
+	&.vertical {
+		width: 1px;
+		border-radius: 10px;
+		height: 190px;
+		background-color: $grey;
+		margin-bottom: 10px;
+	}
+}

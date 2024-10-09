@@ -1,0 +1,34 @@
+<footer class="container">
+	<div class="content">
+		<div class="info">
+			<div class="row">
+				<div class="logo">
+					<a>{{ "COMMON.NAME" | translate }}</a>
+				</div>
+				<a 	class="mail" 
+					[href]="'mailto:' + ( 'COMMON.MAIL' | translate )">
+					{{ "COMMON.MAIL" | translate }}
+				</a>
+			</div>
+			<div class="row">
+				<span class="description">{{ "FOOTER.INFO.DESCRIPTION" | translate }}</span>
+			</div>
+		</div>
+		<div class="media">
+			<div class="title">
+				{{ "FOOTER.MEDIA.TITLE" | translate }}
+			</div>
+			<div class="links">
+				<a [href]="( 'FOOTER.MEDIA.LINKS.GITHUB' | translate)">
+					<img class="icon" src="assets/icons/socials/github.svg" alt="github">
+				</a>
+				<a [href]="( 'FOOTER.MEDIA.LINKS.TELEGRAM' | translate)">
+					<img class="icon" src="assets/icons/socials/telegram.svg" alt="telegram">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="content-footer">
+		<span class="title">{{ "FOOTER.COPYRIGHT" | translate }}</span>
+	</div>
+</footer>
